@@ -7,7 +7,7 @@ The purpose of this repository and documents are to establish a baseline set of 
 - [General Guidelines](general-guidelines.md)
 - [Definition of Done](definition-of-done.md)
 - [Code Review](code-review.md)
-- [Project Organization]([project-organization.md)
+- [Project Organization](project-organization.md)
 - [Javascript Application Style Guides](javascript-application-style-guides.md)
 - [Git Guidelines](git-guidelines.md)
 - [Release Process](release-process.md)
