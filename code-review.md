@@ -32,12 +32,14 @@ Together with the author, do one last review of the Definition of Done. Once the
 - **Be kind.** Review code with the understanding that the author has put forth their best effort and recommend changes in a humble manner. If it helps, reach out and have an in person conversation to review the suggested changes with the author.
 - **Be prompt.** To the best of your ability, review code as soon after it is submitted for review as possible. This way the author will not have moved on to a new task and will have fresh context for the story being reviewed.
 
-## Code Acceptance Criteria
-- Does it pass the [Definition of Done](definition-of-done.md)?
-    - Are all automated tests passing?
-    - Was the style guide followed to a reasonable level?
+## Code Review Checklist
+- Are the commit messages properly formatted and easy to understand?
+- Are any new files well organized within the project?
+- Is the code easy to understand and follow?
+- Do the automated tests clearly explain the behavior of the new code?
+- Are error states handled cleanly and correctly?
+- Are all new dependancies necessary and of value?
+- Are there any opportunities to refactor shared logic into a service or class?
+- Were the styleguide and linting rules followed?
 - Do the changes meet the acceptance criteria?
-- Is the code in a better state than when it started?
-- Will the code be reasonably easy to maintain in the future?
-- Is the code too clever? Do optimizations or lack of self-documentation obscure the intent of the code?
-- Is the branch ready for merging? There should be no WIP commits, commits should be squashed into individually deployable commits.
+- Does the pull request pass the entire [Definition of Done](definition-of-done.md)?
