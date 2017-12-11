@@ -2,7 +2,7 @@
 
 ## Goals of Code Review
 - To ensure multiple people understand and can support the code.
-- To spread coding expertise, both from the review and from the author.
+- To spread coding expertise, both from the reviewer and from the author.
 - To assist in delivering the most reliable, performant, and highest quality product.
 
 ## General Process
@@ -10,7 +10,7 @@
 ### 1. Read and Understand the Story
 Be sure you have read and understand the story. Ask any questions about the purpose or requirements to either the PM or the Software Engineering Manager.
 
-### 2. Have a Quick Conversation with the Author
+### 2. Have a Quick Conversation and Demo with the Author
 Review the story together. Discuss at a high-level how the author implemented the story. Be sure you have a general understanding of the shape of the code changes and the purpose of the changes. This conversation should also include a demo of the functionality being reviewed.
 
 ### 3. Checkout the Feature Branch and Functionally Test the Code
