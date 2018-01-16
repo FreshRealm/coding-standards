@@ -15,6 +15,6 @@ The purpose of this repository and documents are to establish a baseline set of 
 - FileMaker
     - [Development Life Cycle](filemaker/development-life-cycle.md)
     - [Definiton of Done](filemaker/definition-of-done.md)
-    - [Sollution Review](filemaker/solution-review.md)
+    - [Solution Review](filemaker/solution-review.md)
     - [Release Process](filemaker/release-process.md)
     - [Solution Version Management](filemaker/solution-version-management.md)
