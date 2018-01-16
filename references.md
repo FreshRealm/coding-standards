@@ -1,23 +1,21 @@
 # References
 
 ## References & Useful Tutorials/Documentation
-Javascript Documentation
-Node.js guides
-Current LTS Node.js Documentation
-Express Web Framework
-Angular Style Guide
-Current Angular.js Developer Guide
-Current Angular.js API Documentation
-Atom cross-platform text editor
-FR Webpack Angular Atom Snippets
-Webpack Frontend Build System
-Less CSS Pre-processor
-JSHint linter
-Pivotal Web Services (Cloud Foundry) Documentation
-FreshRealm Merchant API Documentation
-Git Actions Visualizer
-Spectacles Window Management App for macOS
-Papertrail Setup for Cloud Foundry Apps
+- [Javascript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [Node.js guides](https://nodejs.org/en/docs/guides/)
+- [Current LTS Node.js Documentation](https://nodejs.org/dist/latest-v8.x/docs/api/)
+- [Express Web Framework](https://expressjs.com/)
+- [Angular.js Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+- [Current Angular.js Developer Guide](https://docs.angularjs.org/guide)
+- [Current Angular.js API Documentation](https://docs.angularjs.org/api)
+- [Visual Studio Code cross-platform text editor](https://code.visualstudio.com/)
+- [FR Webpack Angular Atom Snippets](https://atom.io/packages/angularjs-styleguide-webpack-snippets)
+- [Pivotal Web Services (Cloud Foundry) Documentation](http://docs.run.pivotal.io/starting/index.html)
+- [FreshRealm Merchant API Documentation](https://freshrealm.docs.apiary.io/)
+- [FreshRealm Merchant API v3 Documentation](https://freshrealmv3.docs.apiary.io/)
+- [Git Actions Visualizer](https://onlywei.github.io/explain-git-with-d3/)
+- [Spectacles Window Management App for macOS](https://www.spectacleapp.com/)
+- [Papertrail Setup for Cloud Foundry Apps](https://help.papertrailapp.com/kb/hosting-services/cloud-foundry/)
 
 ## Useful Git Tools
 WIP/UnWIP aliases: add the following to your `~/.gitconfig` file.
@@ -49,13 +47,12 @@ email:
 global: true  # Set to true for git-pair to change git configuration for all your projects
 ```
 
-## Useful Atom Packages and Settings
-FR Webpack Angular Atom Snippets
-Linter & https://atom.io/packages/linter-jshint - shows in-line linting status
-https://atom.io/packages/fixmyjs - automatically fixes simple linting errors (respects the .jshintrc file) (to finish installing: As mentioned by @sindresorhus in #7, npm install in ~/.atom/packages/fixmyjs works)
-https://atom.io/packages/atom-beautify
-Atom-chai-snippets
-File-icons
-Project-manager
-Useful Atom Snippets
-
+## Useful Visual Studio Code Packages and Settings
+- [Angular 4 and TypeScript/HTML VS Code Snippets - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=danwahlin.angular2-snippets)
+- [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+- [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
