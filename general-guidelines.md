@@ -7,7 +7,7 @@ Things move quickly and change often at FreshRealm. This means that at times req
 We as an engineering team also strive to use the best technologies for the problem at hand. This means that sometimes you will need to learn a new framework, a new architecture pattern, or even a new language. When this happens use your fellow engineers and the Senior Engineering team to their fullest. Questions are encouraged and collaboration is valued.
 
 ## Pair Programming
-The engineering team will program in pairs as much as possible. This is done to increase quality and reduce bugs, as well as to naturally spread knowledge of the systems and tools through collaboration.
+The engineering team will program in pairs if necessary. Pair programming increases quality and reduce bugs, as well as to naturally spread knowledge of the systems and tools through collaboration.
 
 Any time an engineer solos on a task they must have their code reviewed via a Pull Request by at least one other engineer. Pairs can also ask for Code Review if they want additional feedback before merging their work (this can be especially helpful on complex tasks).
 
@@ -19,6 +19,9 @@ For Services and other classes, all methods should have unit tests. If method A 
 A useful pattern for Service classes in particular is to have a main method that strings together other class methods, passing data between them. This allows for easy testing of the high-level business logic of the service as well as the low level logic of the other methods.
 
 No http or database calls should ever actually run in unit tests. For code that uses http or database requests (perhaps for API calls), if at all possible the request module/library should be stubbed. If stubbing is not possible for some reason, then an http request mocking library (like nock in javascript apps) should be used.
+
+## Continuos Integration
+All Pivotal Cloud Foundry Angular.io and Node 8+ applications are tested and deployed automaticaly using Circle CI, so developers don't have to. Once pull request is complete and pushed to the `master` branch, Circle CI will test the code and deploy to test space in a couple of minutes. Any commit to release/* branch gets deployed to staging space. Please subscribe to your projects on [Circle CI](https://circleci.com/bb/freshrealm) page to receive notifications about failing builds.
 
 ## Business Logic Belongs in Services
 Business logic should be implemented in dedicated Services. When possible the Service should be given raw data to manipulate and return raw data, allowing the Controller or other calling context to deal with using Data Models for finding input data and saving output data. This allows for easy testing of the business logic and simple re-use of the business logic.
