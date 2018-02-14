@@ -27,6 +27,8 @@ It is often useful when developing a process workflow in Angular.js with ui-rout
 ## Angular Applications
 For [Angular](https://angular.io/) applications the [Angular CLI](https://cli.angular.io/) should be used to generate all projects and basic files/modules. All other typescript files should follow the [Angular Style Guide](https://angular.io/guide/styleguide).
 
+### Local Storage
+To prevent untentional sharing of data on local storage use `app-name.variable-name` syntax for naming local storage varaibles.
 
 ## Node.js Applications
 In general, the larger patterns established in the Angular Style Guide should also be followed in Node.js applications. This includes project organization (folders-by-feature and LIFT), as well as general javascript best practices (minimizing anonymous function usage, single responsibility of files, etc.).
