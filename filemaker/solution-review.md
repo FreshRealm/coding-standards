@@ -1,3 +1,0 @@
-# FileMaker Solution Review
-
-TBD

@@ -1,3 +1,0 @@
-# FileMaker Release Process
-
-TBD

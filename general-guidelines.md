@@ -12,7 +12,9 @@ The engineering team will program in pairs if necessary. Pair programming increa
 Any time an engineer solos on a task they must have their code reviewed via a Pull Request by at least one other engineer. Pairs can also ask for Code Review if they want additional feedback before merging their work (this can be especially helpful on complex tasks).
 
 ## Test Driven Development
-All software projects should follow Test Driven Development practices. In short: unit tests should be written before code; all business logic should be covered by unit tests; only the code under test should be tested (use mocks and stubs!).
+All software projects should follow Test Driven Development practices. In short: build unit tests with your code in an iterative process, but each test should be written before code; all business logic should be covered by unit tests; only the code under test should be tested (use mocks and stubs!).
+
+TDD flow should follow the process described in this article: https://medium.com/@bethqiang/the-absolute-beginners-guide-to-test-driven-development-with-a-practical-example-c39e73a11631
 
 For Services and other classes, all methods should have unit tests. If method A calls method B, then method A’s unit tests should stub method B’s behavior.
 
@@ -20,8 +22,8 @@ A useful pattern for Service classes in particular is to have a main method that
 
 No http or database calls should ever actually run in unit tests. For code that uses http or database requests (perhaps for API calls), if at all possible the request module/library should be stubbed. If stubbing is not possible for some reason, then an http request mocking library (like nock in javascript apps) should be used.
 
-## Continuos Integration
-All Pivotal Cloud Foundry Angular.io and Node 8+ applications are tested and deployed automaticaly using Circle CI, so developers don't have to. Once pull request is complete and pushed to the `master` branch, Circle CI will test the code and deploy to test space in a couple of minutes. Any commit to release/* branch gets deployed to staging space. Please subscribe to your projects on [Circle CI](https://circleci.com/bb/freshrealm) page to receive notifications about failing builds.
+## Continuous Integration
+All Pivotal Cloud Foundry Angular.io and Node 8+ applications are tested and deployed automaticaly using Circle CI, so developers don't have to. Once pull request is complete and pushed to the `master` branch, Circle CI will test the code and deploy to test space in a couple of minutes. Please subscribe to your projects on [Circle CI](https://circleci.com/bb/freshrealm) page to receive notifications about failing builds.
 
 ## Business Logic Belongs in Services
 Business logic should be implemented in dedicated Services. When possible the Service should be given raw data to manipulate and return raw data, allowing the Controller or other calling context to deal with using Data Models for finding input data and saving output data. This allows for easy testing of the business logic and simple re-use of the business logic.
@@ -35,7 +37,12 @@ Controllers should simply act as plumbing, connecting external requests to Data 
 When possible, RESTful controllers should be used in lieu of dedicated controller actions. This means adding filtering to list actions and having update actions that can be used by various contexts as needed.
 
 ## Don’t Over Engineer or Pre-optimize
-It’s often tempting to add complexity to a feature in an attempt to not need to revisit it in the future. This should be avoided as much as possible so that the systems remains as simple as possible. Added complexity should wait until it is actually needed. Examples of over engineering include: adding functionality that has not yet been requested by the business, making a business logic algorithm more complex in an attempt to make it more efficient when the added efficiency is not yet needed, creating a parent class and child class when no other child classes are planned/needed at the moment.
+It’s often tempting to add complexity to a feature in an attempt to not need to revisit it in the future. This should be avoided as much as possible so that the systems remains as simple as possible. Added complexity should wait until it is actually needed - following the TDD process should naturally result in unoptimized code, given you write the simplest code to make the tests pass. 
+
+Examples of over engineering include: 
+   - adding functionality that has not yet been requested by the business
+   - making a business logic algorithm more complex in an attempt to make it more efficient when the added efficiency is not yet needed
+   - creating a parent class and child class when no other child classes are planned/needed at the moment.
 
 Note, this does not mean you cannot optimize your code or add complexity that is of value. The key is to know the cost of the complexity you are adding and ask yourself if said complexity is really needed right now. When in doubt, talk with the Senior Engineering team for guidance.
 
