@@ -11,3 +11,5 @@ A good way to remember this is to follow the LIFT principle, which dictates that
 This principle encourages us to keep things simple and reduce over-optimization and early complexity.
 
 Folder and file names should use the “dash” style for replacing spaces. For example, a feature known as “Sales Orders” would be in a `sales-order` folder, the Sales Order controller would be in a file named `sales-order.controller.js`.
+
+Place code in the appropriate type of module for the type of work being done - controllers deal with transport, services deal with business logic, HTML deals with visualization. [General Guidelines](general-guidelines.md) covers this in more detail.
